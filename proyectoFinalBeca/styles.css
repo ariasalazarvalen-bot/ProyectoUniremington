@@ -1,0 +1,244 @@
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+.header {
+    width: 100%;
+    border-bottom: 2px solid #00965e; 
+    padding: 10px 40px;
+    display: flex;
+    justify-content: flex-end; /* Alinea el logo a la derecha como en tu mockup */
+}
+
+.logo {
+    height: 60px; 
+    object-fit: contain;
+}
+
+
+.contenedor-fila {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.panel {
+    background-color: #dbdbdb;
+    width: 320px;
+    padding: 30px 20px;
+    border-radius: 4px; /* Un toque leve de redondeado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usuario {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.avatar-grande {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.avatar-grande .material-symbols-outlined {
+    font-size: 50px;
+}
+
+.panel h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.subtitulo-barrio {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.menu-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-panel {
+    background-color: #00965e; /* Verde del mockup */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s ;
+}
+
+.btn-panel:hover {
+    background-color: #007d4f;
+}
+
+.btn-panel .material-symbols-outlined {
+    font-size: 28px;
+}
+
+/* --- SECCIÓN 2: PUBLICACIONES (DERECHA) --- */
+.publicaciones-container {
+    background-color: #dbdbdb;
+    width: 550px;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Avatares circulares del feed */
+.avatar-mini {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Evita que se deforme */
+}
+
+/* Barra de crear publicación */
+.barra-crear {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-falso {
+    background-color: #00965e;
+    color: white;
+    font-weight: 500;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+/* Envoltura para alinear el avatar con la tarjeta */
+.lista-publicaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Tarjeta de Publicación */
+.post-card {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 15px;
+    flex-grow: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-autor {
+    font-weight: bold;
+    color: #2b579a; /* Azul para los nombres */
+    font-size: 1rem;
+}
+
+/* Tags de Categorías */
+.tag {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.tag-fuerza { background-color: #d1f2d9; color: #008f39; }
+.tag-reparacion { background-color: #ffe6cc; color: #d35400; }
+.tag-clases { background-color: #e1f5fe; color: #0288d1; }
+
+.post-contenido {
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #444;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 12px;
+}
+
+/* Botones de acción inferiores */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-action {
+    border: none;
+    background: transparent;
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-comentar {
+    color: #555;
+}
+
+.btn-comentar:hover {
+    color: #000;
+}
+
+.btn-ofrecer {
+    background-color: #00965e;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.btn-ofrecer:hover {
+    background-color: #007d4f;
+}
+
+.btn-action .material-symbols-outlined {
+    font-size: 18px;
+}
