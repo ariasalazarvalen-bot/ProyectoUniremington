@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaBarrio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="ConectaBarrio" class="logo">
+        </div>
+    </header>
+
+    <main class="contenedor-fila">
+
+        <section class="panel">
+            <div class="usuario">
+                <div class="avatar-grande">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+                <h2>Panel de Comunidad</h2>
+                <p class="subtitulo-barrio">Barrio Las Flores</p>
+            </div>
+
+            <nav class="menu-panel">
+                <button class="btn-panel activo">
+                    <span class="material-symbols-outlined">front_hand</span>
+                    PEDIR AYUDA
+                </button>
+
+               
+
+                <button class="btn-panel">
+                    <span class="material-symbols-outlined">distance</span>
+                    MAPA DE VECINOS
+                </button>
+                <button class="btn-panel">
+                    <span class="material-symbols-outlined">group</span>
+                    MIS COLABORACIONES
+                </button>
+            </nav>
+        </section>
+
+        <section class="publicaciones-container">
+            
+            <div class="barra-crear">
+                <div class="avatar-mini">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+                <div class="input-falso">¿En qué necesitas ayuda hoy en tu barrio?</div>
+            </div>
+
+            <div class="lista-publicaciones">
+                
+                <div class="post-wrapper">
+                    <div class="avatar-mini">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-header">
+                            <span class="post-autor">María G.</span>
+                            <span class="tag tag-fuerza">FUERZA FÍSICA</span>
+                        </div>
+                        <p class="post-contenido">
+                            "Necesito a alguien que pueda ayudarme a mover unos muebles pesados esta tarde. Son solo 3 piezas y vivo en planta baja. ¡Muchas gracias!"
+                        </p>
+                        <div class="post-actions">
+                            <button class="btn-action btn-comentar">
+                                <span class="material-symbols-outlined">chat_bubble</span> COMENTAR
+                            </button>
+                            <button class="btn-action btn-ofrecer">
+                                <span class="material-symbols-outlined">handshake</span> OFRECER AYUDA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-wrapper">
+                    <div class="avatar-mini">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-header">
+                            <span class="post-autor">Carlos R.</span>
+                            <span class="tag tag-reparacion">REPARACIÓN</span>
+                        </div>
+                        <p class="post-contenido">
+                            "Se me rompió una tubería y no encuentro plomero disponible en el barrio. ¿Alguien tiene herramientas básicas o sabe de algún contacto de confianza?"
+                        </p>
+                        <div class="post-actions">
+                            <button class="btn-action btn-comentar">
+                                <span class="material-symbols-outlined">chat_bubble</span> COMENTAR
+                            </button>
+                            <button class="btn-action btn-ofrecer">
+                                <span class="material-symbols-outlined">handshake</span> OFRECER AYUDA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-wrapper">
+                    <div class="avatar-mini">
+                        <span class="material-symbols-outlined">person</span>
+                    </div>
+                    <div class="post-card">
+                        <div class="post-header">
+                            <span class="post-autor">Elena S.</span>
+                            <span class="tag tag-clases">CLASES</span>
+                        </div>
+                        <p class="post-contenido">
+                            "Busco a alguien que sepa de matemáticas básicas para ayudar a mi hijo de 10 años con una tarea. Puedo ofrecer a cambio una torta casera recién horneada."
+                        </p>
+                        <div class="post-actions">
+                            <button class="btn-action btn-comentar">
+                                <span class="material-symbols-outlined">chat_bubble</span> COMENTAR
+                            </button>
+                            <button class="btn-action btn-ofrecer">
+                                <span class="material-symbols-outlined">handshake</span> OFRECER AYUDA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
